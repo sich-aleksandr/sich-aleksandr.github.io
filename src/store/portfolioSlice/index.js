@@ -4,10 +4,10 @@ export const { actions, reducer } = createSlice({
   name: "tasks",
   initialState: {
     tasks: [
-      { id: 1, title: "title", photo: '', isDone: true },
-      { id: 2, title: "title", photo: '', isDone: true },
-      { id: 3, title: "title", photo: '', isDone: false },
-      { id: 4, title: "title", photo: '', isDone: false },
+      { id: 1, title: "title", photo: '', tags: ['Люди'],  isDone: true },
+      { id: 2, title: "title", photo: '', tags: ['Животные'], isDone: true },
+      { id: 3, title: "title", photo: '', tags: ['Люди'], isDone: false },
+      { id: 4, title: "title", photo: '', tags: ['Люди'], isDone: false },
     ]
   },
   reducers: {
