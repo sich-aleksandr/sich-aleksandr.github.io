@@ -1,5 +1,6 @@
 import React from "react";
-import css from './header.module.css'
+import css from "./header.module.css";
+import logo from "./logo.jpg";
 
 const menu = [
   { id: 1, name: "Главная" },
@@ -10,7 +11,8 @@ const menu = [
 export const Header = () => {
   return (
     <div className={css.header}>
-      <div className={css.logo}>Logo</div>
+      <img className={css.logo} src={logo} alt="Logo" />
+      <h2>sincere_phot0s</h2>
       <nav className={css.menu}>
         <ul className={css.menu_items}>
           {menu.map(({ id, name }) => {

@@ -1,0 +1,49 @@
+/* :root {
+  --card_width: 250px;
+  --row_increment: 10px;
+  --card_border_radius: 16px;
+  --card_small: 26;
+  --card_medium: 33;
+  --card_large: 45;
+} */
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* position: absolute;
+  left: 50%;
+  transform: translateX(-50%); */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-auto-rows: 11px;
+  justify-content: center;
+
+}
+
+.card {
+  padding: 0;
+  margin: 3px 2px;
+  border-radius: 1px;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  height: auto;
+  width: 240px;
+  align-items: flex-end;
+  background-size: cover;
+  box-shadow: 0 0 1px 0px;
+}
+
+.small {
+  grid-row-end: span 26;
+}
+
+.medium {
+  grid-row-end: span 33;
+}
+
+.large {
+  grid-row-end: span 45;
+}

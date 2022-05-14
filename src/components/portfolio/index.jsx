@@ -1,28 +1,40 @@
 import React from "react";
-import css from "./todo-list-item.module.css";
-import { useDispatch, useSelector } from "react-redux";
-import { getPortfolio, TasksAction } from "../../store";
+import css from "./portfolio-item.module.css";
+import { useSelector } from "react-redux";
+import { getPortfolio } from "../../store";
 import { Link } from "react-router-dom";
 
 export const PortfolioItem = () => {
-  const dispatch = useDispatch();  
   const tasks = useSelector(getPortfolio);
 
-  const deleteTask = (id) => dispatch(TasksAction.deleteTask(id));
-  const toggleTask = (id) => dispatch(TasksAction.toggleTask(id));
+  const style = (size) => {
+    if (size === 'small') {
+      return [css.card, css.small]
+    }
+    if (size === 'medium') {
+      return [css.card, css.medium]
+    }
+    if (size === 'large') {
+      return [css.card, css.large]
+    }
+  };
 
-  return tasks.map(({ id, title, isDone }) => {
-    return (
-      <li className={css.todo} key={id.toString()}>
-        <input
-          type="checkbox"
-          checked={isDone}
-          onChange={() => toggleTask(id)}
-        />
-        <span className={css.label}>{title}</span>
-        <Link to={`/todo/${id}`}>More...</Link>
-        {isDone && <button onClick={() => deleteTask(id)}>Delete</button>}
-      </li>
-    );
-  });
+  return (
+    <div className={css.container}>
+      {tasks.map(({ id, title, photo, size }) => {
+        return (
+          <div
+            className={ style(size).join(' ') }
+            key={id.toString()}
+            style={{
+              backgroundImage: `url("${photo}")`,
+            }}
+          >
+            {/* <span>{title}</span> */}
+            {/* <Link to={`/${id}`}>More...</Link> */}
+          </div>
+        );
+      })}
+    </div>
+  );
 };
