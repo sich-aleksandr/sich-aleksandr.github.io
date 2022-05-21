@@ -41,7 +41,7 @@
     }
 }
 
-a {
+.link {
 	position: relative;
 	color: #484848;
 	font-size: 1.60rem;
@@ -49,7 +49,7 @@ a {
     font-weight: 300;
 }
 
-a::before {
+.link::before {
 	content: '';
 	position: absolute;
 	left: 0; bottom: -4px;
@@ -58,10 +58,10 @@ a::before {
 	background-color: #3acdcd;
 }
 
-a:hover:before {
+.link:hover:before {
 	width: 100%;
 }
 
-a::before {
+.link::before {
 	transition: width 0.35s;
 }

@@ -2,9 +2,9 @@ import React from "react";
 import css from "./portfolio-item.module.css";
 import { useSelector } from "react-redux";
 import { getPortfolio } from "../../store";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-export const PortfolioItem = () => {
+export const Portfolio = () => {
   const tasks = useSelector(getPortfolio);
 
   const style = (size) => {

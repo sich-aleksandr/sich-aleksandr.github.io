@@ -1,5 +1,7 @@
 .sort {
-	    display: flex;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .sort-radio {
 	margin: 5px;
