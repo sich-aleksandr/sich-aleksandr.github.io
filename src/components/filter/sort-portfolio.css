@@ -2,12 +2,58 @@
 	display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
 }
 .sort-radio {
-	margin: 5px;
-	padding: 5px;
-	border-radius: 5px;
+    display: inline-block; 
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 0 15px 15px 0;
+    outline: none;
+    border: none; 
+    border-radius: 6px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #484848;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    
+    opacity: 0.65;
+}
 
-	
-	    border: 1px solid black;
+.sort-radio:focus-visible {
+    box-shadow: 0 0 0 2px #666;
+}
+.sort-radio:hover {
+    background-color: #DBE7F2;
+}
+.sort-radio:active {
+    transform: scale(0.96);
+}
+.sort-radio_press {
+  display: inline-block; 
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 0 15px 15px 0;
+    outline: none;
+    border: none; 
+    border-radius: 6px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #484848;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    pointer-events: none;
+
 }

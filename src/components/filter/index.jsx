@@ -17,32 +17,34 @@ export const SortPortfolio = () => {
     <div className="sort">
       {filterOptions.map(({ id, value, label }) => {
         return (
-          <div key={id} className="sort-radio">
-            <input
-              name="sort"
-              type="radio"
-              id={id}
-              value={value}
-              checked={value === selectedFilter}
-              onChange={changeFilter}
-            />
-            <label htmlFor={id}>{label}</label>
-          </div>
+          <button
+            key={id}
+            className={
+              value === selectedFilter ? "sort-radio_press" : "sort-radio"
+            }
+            id={id}
+            value={value}
+            checked={value === selectedFilter}
+            onClick={changeFilter}
+          >
+            {label}
+          </button>
         );
       })}
       {Tags.map((tags, id) => {
         return (
-          <div key={id} className="sort-radio">
-            <input
-              name="sort"
-              type="radio"
-              id={id}
-              value={tags}
-              // checked={value === selectedFilter}
-              onChange={changeFilter}
-            />
-            <label htmlFor={id}>{tags}</label>
-          </div>
+          <button
+            key={id}
+            className={
+              tags === selectedFilter ? "sort-radio_press" : "sort-radio"
+            }
+            id={id}
+            value={tags}
+            checked={tags === selectedFilter}
+            onClick={changeFilter}
+          >
+            {tags}
+          </button>
         );
       })}
     </div>
