@@ -24,6 +24,15 @@ const StyledMenu = styled.nav`
     width: 100%;
     /* display: flex; */
     /* display: none; */
+    display: ${({ open }) => (open ? "flex" : "none")};
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  }
+  @media (min-width: 577px) and (max-width: 768px) {
+    /* width: 100%; */
+    /* display: flex; */
+    /* display: none; */
+    display: ${({ open }) => (open ? "flex" : "none")};
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   }
 
   a {

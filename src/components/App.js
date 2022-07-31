@@ -13,10 +13,10 @@ function App() {
     <>
     <Header />
     <Routes>
-          <Route exact path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           {/* <Route exact path="/portfolio" element={<><SortPortfolio /> <Portfolio /></>} /> */}
-          <Route exact path="/conditions" element={<Conditions />} />
-          <Route exact path="/" element={<Main />} />
+          <Route path="/conditions" element={<Conditions />} />
+          <Route path="/" element={<Main />} />
     </Routes>
     
     <Footer />
