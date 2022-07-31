@@ -4,16 +4,33 @@ html {
 }
 
 body {
-  margin: 0;
   box-sizing: border-box;
-  font-family: 'Alumni Sans', sans-serif;
+  font-family: 'Alumni Sans', sans-serif!important;
   font-size: 18px;
+  overflow-x: hidden;
+}
+
+#root {
+  margin: 0 auto;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main {
   display: block;
 }
 
+.main_img {
+  background-image: url(./main/glab_bg.jpg);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+
+  width: 100%;
+  height: 325px;
+  margin: 10px 0;   
+}
 
 h1 {
   font-size: 2em;
@@ -33,7 +50,9 @@ pre {
 
 a {
   background-color: transparent;
+  
 }
+
 
 abbr[title] {
   border-bottom: none;

@@ -1,8 +1,8 @@
 import React from "react";
-import "./sort-todo.css";
+import "./sort-portfolio.css";
 import { filterOptions } from "./constants";
 import { useSelector, useDispatch } from "react-redux";
-import { filterActions, getFilter } from "../../store";
+import { filterActions, getFilter, getTags } from "../../store";
 
 export const SortPortfolio = () => {
   const dispatch = useDispatch();
@@ -11,24 +11,42 @@ export const SortPortfolio = () => {
 
   const selectedFilter = useSelector(getFilter);
 
+  const Tags = useSelector(getTags);
+
   return (
     <div className="sort">
       {filterOptions.map(({ id, value, label }) => {
         return (
-          <div key={id} className="sort-radio">
-            <input
-              name="sort"
-              type="radio"
-              id={id}
-              value={value}
-              checked={value === selectedFilter}
-              onChange={changeFilter}
-            />
-            <label htmlFor={id}>{label}</label>
-          </div>
+          <button
+            key={id}
+            className={
+              value === selectedFilter ? "sort-radio_press" : "sort-radio"
+            }
+            id={id}
+            value={value}
+            checked={value === selectedFilter}
+            onClick={changeFilter}
+          >
+            {label}
+          </button>
+        );
+      })}
+      {Tags.map((tags, id) => {
+        return (
+          <button
+            key={id}
+            className={
+              tags === selectedFilter ? "sort-radio_press" : "sort-radio"
+            }
+            id={id}
+            value={tags}
+            checked={tags === selectedFilter}
+            onClick={changeFilter}
+          >
+            {tags}
+          </button>
         );
       })}
     </div>
   );
 };
-
