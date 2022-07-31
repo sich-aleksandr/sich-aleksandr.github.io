@@ -29,23 +29,30 @@ export const LiveCarusel = () => {
       slidesToScroll={4}
       slidesToShow={4}
       scrollOnDevice={true}
+      slidesSpacing={4}
     >
       <div>
         <img
           alt=""
-          src={portfolio.tasks[0].photo}
-        />
-      </div>
-      <div>
-        <img
-          alt=""
-          src={portfolio.tasks[4].photo}
-        />
-      </div>
-      <div>
-        <img
-          alt=""
           src={portfolio.tasks[11].photo}
+        />
+      </div>
+      <div>
+        <img
+          alt=""
+          src={portfolio.tasks[33].photo}
+        />
+      </div>
+      <div>
+        <img
+          alt=""
+          src={portfolio.tasks[21].photo}
+        />
+      </div>
+      <div>
+        <img
+          alt=""
+          src={portfolio.tasks[35].photo}
         />
       </div>
       <div>
@@ -63,19 +70,13 @@ export const LiveCarusel = () => {
       <div>
         <img
           alt=""
-          src={portfolio.tasks[11].photo}
+          src={portfolio.tasks[26].photo}
         />
       </div>
       <div>
         <img
           alt=""
-          src={portfolio.tasks[19].photo}
-        />
-      </div>
-      <div>
-        <img
-          alt=""
-          src={portfolio.tasks[21].photo}
+          src={portfolio.tasks[30].photo}
         />
       </div>
     </InfiniteCarousel>

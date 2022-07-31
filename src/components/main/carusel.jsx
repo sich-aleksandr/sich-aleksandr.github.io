@@ -19,33 +19,25 @@ export const Carusel = () => {
       <div className="carusel-container">
         {/* <button className="button-next" onClick={() => slider.current.prev()}>next</button> */}
         <Carousel ref={slider} autoplay>
-          {/*autoplay*/}
           <div>
             <img
               style={contentStyle}
-              alt="sdfds"
-              src={portfolio.tasks[0].photo}
+              alt="Carousel-slide_1"
+              src={portfolio.tasks[33].photo}
             />
           </div>
           <div>
             <img
               style={contentStyle}
-              alt="sdfds"
-              src={portfolio.tasks[4].photo}
+              alt="Carousel-slide_2"
+              src={portfolio.tasks[7].photo}
             />
           </div>
           <div>
             <img
               style={contentStyle}
-              alt="sdfds"
-              src={portfolio.tasks[22].photo}
-            />
-          </div>
-          <div>
-            <img
-              style={contentStyle}
-              alt="sdfds"
-              src={portfolio.tasks[21].photo}
+              alt="Carousel-slide_3"
+              src={portfolio.tasks[17].photo}
             />
           </div>
         </Carousel>

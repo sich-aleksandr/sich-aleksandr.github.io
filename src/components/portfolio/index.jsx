@@ -8,6 +8,10 @@ import { LightBox } from "../commons/lightBox";
 export const Portfolio = () => {
   const portfolio = useSelector(getPortfolio);
 
+  useEffect(() => {
+    document.title = "Портфолио";
+  },[]);
+
   const style = (size) => {
     if (size === "small") {
       return [css.card, css.small];

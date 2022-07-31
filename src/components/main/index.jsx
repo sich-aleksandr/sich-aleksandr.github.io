@@ -1,8 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Carusel } from "./carusel";
 import "./main.css";
 
 export const Main = () => {
+
+  useEffect(() => {
+    document.title = "Душевный фотограф";
+  },[]);
+
   return (
     <>
       <div className="main_img"></div>
@@ -11,7 +16,7 @@ export const Main = () => {
           <Carusel />
           <div className="main-content">
             <h1 className="main-h1">
-              Здравствуйте, меня зовут Инна и я душевный фотограф
+            Искренность в каждом кадре
             </h1>
             <p className="main-text">
               Обращаясь ко мне, Вы получите непостановочные снимки о настоящих

@@ -23,6 +23,7 @@ const StyledMenu = styled.nav`
   @media (max-width: 576px) {
     width: 100%;
     /* display: flex; */
+    /* display: none; */
   }
 
   a {

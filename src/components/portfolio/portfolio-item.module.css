@@ -15,7 +15,7 @@
 
 .container {
   margin: 0;
-  padding: 0;
+  padding-top: 20px;
   width: 100%;
   max-width: 1366px;
   /* position: absolute;
@@ -40,6 +40,7 @@
   align-items: flex-end;
   background-size: cover;
   box-shadow: 0 0 1px 0px;
+  cursor: pointer;
 }
 
 .small {
@@ -52,4 +53,22 @@
 
 .large {
   grid-row-end: span 47;
+}
+
+
+@media (max-width: 767px) {
+  .container {
+      padding-top: 20px;
+      grid-template-columns: repeat(auto-fill, 156px);
+  }
+  .large {
+    grid-row-end: span 22;
+  }
+  .medium {
+    grid-row-end: span 11;
+  }
+  .card {
+    width: 150px;
+
+  }
 }

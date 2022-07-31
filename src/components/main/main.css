@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse;
+    padding-top: 20px;
 }
 .main-h1 {
     font-size: 32px;
@@ -52,6 +53,6 @@
 
 @media (max-width: 767px) {
     .main-flex {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
   }

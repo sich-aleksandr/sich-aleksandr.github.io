@@ -4,7 +4,7 @@ import 'antd/dist/antd.min.css'
 import { Header } from './header'
 import { Main } from './main'
 import { Footer } from './footer'
-import { SortPortfolio } from './filter'
+// import { SortPortfolio } from './filter'
 import { Portfolio } from './portfolio'
 import { Conditions } from './conditions'
 
@@ -13,7 +13,8 @@ function App() {
     <>
     <Header />
     <Routes>
-          <Route exact path="/portfolio" element={<><SortPortfolio /> <Portfolio /></>} />
+          <Route exact path="/portfolio" element={<Portfolio />} />
+          {/* <Route exact path="/portfolio" element={<><SortPortfolio /> <Portfolio /></>} /> */}
           <Route exact path="/conditions" element={<Conditions />} />
           <Route exact path="/" element={<Main />} />
     </Routes>
