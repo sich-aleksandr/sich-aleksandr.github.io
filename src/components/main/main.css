@@ -1,0 +1,58 @@
+.main-content{
+    padding: 20px;
+}
+.main-flex {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    padding-top: 20px;
+}
+.main-h1 {
+    font-size: 32px;
+    text-align: center;
+}
+.main-h2 {
+    font-size: 24px;
+    text-align: center;
+}
+.main-text {
+    font-size: 18px;
+}
+.main-text-center {
+    text-align: center;
+}
+.ant-carousel {
+    width: 100%;
+}
+.carusel-main {
+    display: flex;
+    justify-content: center;
+}
+.carusel-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 350px;
+}
+.button-next {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    left: 0px;
+    background: none;
+    border: 0;
+}
+.button-prev {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    right: 0px;
+    background: none;
+    border: 0;
+}
+
+@media (max-width: 767px) {
+    .main-flex {
+        flex-direction: column-reverse;
+    }
+  }
