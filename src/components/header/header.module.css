@@ -12,6 +12,7 @@
 
 .menu {
     display: flex;
+    padding-right: 20px;
 }
 
 .menu_items {
@@ -22,6 +23,8 @@
 }
 
 .icon {
+    width: 40px;
+    height: auto;
     padding: 5px;
 }
 
@@ -61,6 +64,7 @@
     font-weight: 300;
     display: flex;
 }
+
 .contactLink {
     position: relative;
     color: #484848;
@@ -102,15 +106,34 @@
 .contact {
     margin-right: auto;
     padding-left: 20px;
+    padding-top: 4px;
 }
 
 @media (max-width: 767px) {
     .menu {
         display: none;
     }
-  }
+}
+
 @media (max-width: 992px) {
     .item {
         padding: 0 10px;
     }
-  }
+}
+
+@media only screen and (min-width: 1200px) {
+    .link, .contactLink {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .header {
+        height: 90px;
+    }
+    .icon {
+        width: 50px;
+    }
+    .contact {
+        padding-top: 8px;
+    }
+}

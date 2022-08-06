@@ -17,6 +17,7 @@
 }
 .li {
     list-style: decimal;
+    align-self: baseline;
 }
 .h1 {
     font-size: 32px;
@@ -26,11 +27,13 @@
 }
 .text {
     font-size: 18px;
+    padding: 0 20px 0px 20px
 }
 .spanlight {
     font-style: italic;
     font-size: 14px;
     padding: 0 10px;
+    list-style-type: none;
 }
 .textpad {
     padding: 0 10px;
@@ -40,6 +43,8 @@
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    padding-bottom: 10px;
+    
 }
 .img {
     flex: 0 1 33.333%;
@@ -61,6 +66,13 @@
 }
 .otherInformation {
     margin: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.other {
+    padding: 20px 20px 0 20px;
 }
 
 @media (max-width: 767px) {
@@ -76,7 +88,9 @@
     .h2 {
         font-size: 20px;
         line-height: 1;
-        padding-top: 10px;
+        padding-top: 20px;
+        
+        
     }
     p{
         line-height: 1;
@@ -85,5 +99,21 @@
     .descr {
         font-size: 14px;
         margin-top: -10px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .h1 {
+        font-size: 44px;
+    }
+    .h2, .otherInformation {
+        font-size: 34px;
+        padding-bottom: 24px;  
+    }
+    .text, .descr, .description, .ultam {
+        font-size: 24px;
+    }
+    .spanlight {
+        font-size: 16px;
     }
   }
