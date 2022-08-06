@@ -15,7 +15,7 @@
 
 .container {
   margin: 0;
-  padding-top: 20px;
+  padding-top: 90px;
   width: 100%;
   max-width: 1366px;
   /* position: absolute;
@@ -23,7 +23,7 @@
   transform: translateX(-50%); */
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, 350px);
+  grid-template-columns: repeat(auto-fill, 346px);
   grid-auto-rows: 11px;
   justify-content: center;
 
@@ -58,32 +58,32 @@
 
 @media (max-width: 767px) {
   .container {
-      padding-top: 20px;
-      grid-template-columns: repeat(auto-fill, 156px);
+      padding-top: 90px;
+      grid-template-columns: repeat(auto-fill, 162px);
   }
   .large {
     grid-row-end: span 22;
   }
   .medium {
-    grid-row-end: span 11;
+    grid-row-end: span 10;
   }
   .card {
-    width: 150px;
+    width: 158px;
 
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .container {
-    padding-top: 20px;
-    grid-template-columns: repeat(auto-fill, 290px);
+    padding-top: 120px;
+    grid-template-columns: repeat(auto-fill, 295px);
 }
 
   .large {
-    grid-row-end: span 39;
+    grid-row-end: span 40;
   }
   .medium {
-    grid-row-end: span 20;
+    grid-row-end: span 18;
   }
   .card {
     width: 284px;
