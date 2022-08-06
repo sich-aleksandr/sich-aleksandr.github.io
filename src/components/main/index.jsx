@@ -8,7 +8,7 @@ export const Main = () => {
   }, []);
 
   return (
-    <>
+    <div className="main">
       <div className="main_img"></div>
       <h1 className="main-h1">Искренность в каждом кадре</h1>
       <div className="main-flex">
@@ -41,6 +41,6 @@ export const Main = () => {
           <h2 className="main-h2">Вы - мое вдохновение!</h2>
         </div>
       </div>
-    </>
+    </div>
   );
 };

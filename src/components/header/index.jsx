@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import css from "./header.module.css";
 import { Burger, Menu } from "../burgerMenu"
 import phone from "./phone.png";
-import logo from "./logo.jpg";
+import logo from "./logo.png";
 import inst from "./inst.png";
 
 

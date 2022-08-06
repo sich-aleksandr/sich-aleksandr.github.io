@@ -1,6 +1,9 @@
 .main-content{
     padding: 20px;
 }
+.main {
+    padding-top: 70px;
+}
 .main-flex {
     display: flex;
     flex-direction: row;

@@ -1,6 +1,6 @@
 .conditions {
     width: 100%;
-    padding: 10px;
+    padding: 90px 10px 10px 10px;
 }
 
 .container {
@@ -62,7 +62,7 @@
     margin-top: -20px;
 }
 .ultam { 
-    font-size: 16px;
+    font-size: 18px;
 }
 .otherInformation {
     margin: 0;
@@ -103,6 +103,9 @@
   }
 
   @media only screen and (min-width: 1200px) {
+    .conditions {
+        padding: 120px 10px 10px 10px;
+    }
     .h1 {
         font-size: 44px;
     }
