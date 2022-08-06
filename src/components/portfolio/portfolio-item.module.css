@@ -72,3 +72,21 @@
 
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding-top: 20px;
+    grid-template-columns: repeat(auto-fill, 290px);
+}
+
+  .large {
+    grid-row-end: span 39;
+  }
+  .medium {
+    grid-row-end: span 20;
+  }
+  .card {
+    width: 284px;
+
+  }
+}
